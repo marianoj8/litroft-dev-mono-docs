@@ -1,0 +1,2775 @@
+{
+	"info": {
+		"_postman_id": "cbe282c5-3f7f-4fdb-8e29-274442c6ed41",
+		"name": "Litroft Dev - Mono",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AdminInterno",
+			"item": [
+				{
+					"name": "List-AdminInterno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NzU5N30.Dp5y-mBMMSJDyDZmf5O24Qw-DxoDqY0WGeJeZ5AEmN2CG02KNi-fpk8e1j5PRRKA38ZQRgxehvmRe1nGRNmS4w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/adminInterno",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"adminInterno"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "sexo",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById-AdminInterno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjoxLCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJBZG1pbiIsInVzZXJuYW1lIjoibWFyaWFub2pzOCIsIm5vbWUiOiJNYXJpYW5vIiwic29icmVub21lIjoiSmF2YVN3aW5nIiwiZm9uZSI6Ijk5Ni00NzYtMDAwIiwiZW1haWwiOiJtYXJpYW5vQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBHYW1layIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJleHAiOjE1NzcyMzU2Mjd9.r7PdI_5hQXcFQ7saSKx8Sz0JM2w0CD8EH7W_Ee6YJNtQ04BjTAHGFJQWFfODVLeyIM8j-OyobC7mVe0NO8CuEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/adminInterno/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"adminInterno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAdminInternoById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjoxLCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJBZG1pbiIsInVzZXJuYW1lIjoibWFyaWFub2pzOCIsIm5vbWUiOiJNYXJpYW5vIiwic29icmVub21lIjoiSmF2YVN3aW5nIiwiZm9uZSI6Ijk5Ni00NzYtMDAwIiwiZW1haWwiOiJtYXJpYW5vQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBHYW1layIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJleHAiOjE1NzcyMzU2Mjd9.r7PdI_5hQXcFQ7saSKx8Sz0JM2w0CD8EH7W_Ee6YJNtQ04BjTAHGFJQWFfODVLeyIM8j-OyobC7mVe0NO8CuEQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/adminInterno/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"adminInterno",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save-AdminInterno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NzU5N30.Dp5y-mBMMSJDyDZmf5O24Qw-DxoDqY0WGeJeZ5AEmN2CG02KNi-fpk8e1j5PRRKA38ZQRgxehvmRe1nGRNmS4w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n\t\"nome\": \"Manuel Maria\",\n    \"sobreNome\": \"Macuele\",\n    \"sexo\": \"M\",\n    \"dataNascimento\": \"1997-12-25\",\n    \"bi\": \"86064468048\",\n    \"fone\": \"935-948-845\",\n    \"email\": \"barbosa@gmail.com\",\n    \"endereco\": \"Luanda, Prenda\",\n    \"instituto\": {\"id\": 1}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/adminInterno",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"adminInterno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAdminInterno",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": " \"id\": 1,\n    \"createdAt\": \"2019-12-13 15:12:25\",\n    \"lastModifiedAt\": null,\n    \"totalModified\": 0,\n    \"nome\": \"Mariano\",\n    \"sobreNome\": \"JavaSwing\",\n    \"sexo\": \"M\",\n    \"dataNascimento\": \"1997-05-12\",\n    \"bi\": \"86064468068\",\n    \"fone\": \"996-476-001\",\n    \"email\": \"marianogoncalves8@gmail.com\",\n    \"endereco\": \"Luanda, Gamek\",\n    \"numeroSerie\": \"4108343048\",\n    \"instituto\": {\n        \"id\": 1,",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \"nome\": \"Henrique\",\n    \"sobreNome\": \"Barbosa\",\n    \"sexo\": \"M\",\n    \"dataNascimento\": \"1997-12-25\",\n    \"bi\": \"86064468048\",\n    \"fone\": \"935-948-845\",\n    \"email\": \"barbosa@gmail.com\",\n    \"endereco\": \"Luanda, Prenda\",\n    \"numeroSerie\": \"4108343541\",\n    \"instituto\": {\n        \"id\": 3\n    },\n\"admin\":{\n\"id\":1\n}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/adminInterno",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"adminInterno"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AdminInternoProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJUZXN0Iiwic29icmVub21lIjoiRGlyZWN0b3IiLCJmb25lIjoiNTg0NjQwNjQiLCJlbWFpbCI6Im1mbmlyZmZlZmVAZiIsImVuZGVyZWNvIjoiZnJmcnJnc3ZyIiwiZW50aXR5IjoiU2ltaW9uZSBNdWN1bmUiLCJlbnRpdHlMb2dvVXJpIjoiIiwiZXhwIjoxNTc5NDU1ODc5fQ.5QiVEjb0oX-4kWkO5L0z-GPPkW2T0c5SNuGJO91kpPRKOE1XUxWMtuJ_aoYQp9mpXU8An0bSfV27VKNIEqHoHA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/interno/adminInterno/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"adminInterno",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjoxLCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJBZG1pbiIsInVzZXJuYW1lIjoibWFyaWFub2pzOCIsIm5vbWUiOiJNYXJpYW5vIiwic29icmVub21lIjoiSmF2YVN3aW5nIiwiZm9uZSI6Ijk5Ni00NzYtMDAwIiwiZW1haWwiOiJtYXJpYW5vQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBHYW1layIsImV4cCI6MTU3NjM2MTU1MH0.J5EDNVnTgZNKu8jsdOnJQtFZ-AvIz0y4uLrkti8gvWugaP-iWPiarCykZZWcXLUGm7xAbnIoNkIBAHZZ1YEIMg",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "AreaFormacao",
+			"item": [
+				{
+					"name": "Save-AreaFormacao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"descricao\":\"Industrial\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/areaformacao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"areaformacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById-AreaFormacao",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/areaformacao/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"areaformacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById-AreaFormacao",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/areaformacao/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"areaformacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List-AreaFormacao",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/areaformacao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"areaformacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-AreaFormacao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjoxLCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJBZG1pbiIsInVzZXJuYW1lIjoibWFyaWFub2pzOCIsIm5vbWUiOiJNYXJpYW5vIiwic29icmVub21lIjoiSmF2YVN3aW5nIiwiZm9uZSI6Ijk5Ni00NzYtMDAwIiwiZW1haWwiOiJtYXJpYW5vQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBHYW1layIsImV4cCI6MTU3NjQxMjI3NH0.fcJp3kUptzO-bAsQ-f54v2iMxQuMpWFoVNTz1gbXxHkgX3JTqQGjsu6AG_sVMSilvM96h-pnkuDYduvhMGISiw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"createdAt\": \"2019-12-08 12:05:19\",\n    \"totalModified\": 1,\n    \"descricao\": \"Industrial\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/areaformacao",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"areaformacao"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjoxLCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJBZG1pbiIsInVzZXJuYW1lIjoibWFyaWFub2pzOCIsIm5vbWUiOiJNYXJpYW5vIiwic29icmVub21lIjoiSmF2YVN3aW5nIiwiZm9uZSI6Ijk5Ni00NzYtMDAwIiwiZW1haWwiOiJtYXJpYW5vQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBHYW1layIsImV4cCI6MTU3NjM2MTU1MH0.J5EDNVnTgZNKu8jsdOnJQtFZ-AvIz0y4uLrkti8gvWugaP-iWPiarCykZZWcXLUGm7xAbnIoNkIBAHZZ1YEIMg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Curso",
+			"item": [
+				{
+					"name": "DeleteCursoByEntity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJUZXN0Iiwic29icmVub21lIjoiRGlyZWN0b3IiLCJmb25lIjoiNTg0NjQwNjQiLCJlbWFpbCI6Im1mbmlyZmZlZmVAZiIsImVuZGVyZWNvIjoiZnJmcnJnc3ZyIiwiZW50aXR5IjoiU2ltaW9uZSBNdWN1bmUiLCJlbnRpdHlMb2dvVXJpIjoiIiwiZXhwIjoxNTc5NTI3MTgzfQ.5zyP8etQrHXcFaeguyKVy6iMFB6XZVcTKvGFkIZ-CzaZJ1Oshyhh_l3C2F_hq9_1pZ7oS2DVZB9KNbdiypoQnw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/interno/curso",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAllCurso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIFByaW1hcmlvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyNzI3OH0.caqkOiBssJfspUlz7yTSJ2y3tBb8W80Iu671Vi-pt7fdEXFwYhz-wnlZAbsAHUlTDHVLeeElR74qf9RI-XvbTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/curso/l",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"curso",
+								"l"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveCurso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIGRvIElJIGNpY2xvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU3NTIxMX0.I9D3RnAU5hdPn6KYo6_joJ2G6cUKtZd2ssEIt3MDUs-s7tYDA-BbvXzGk7DyEbCSl8BAtC0JS4-pXMT-SlmXSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\":\"Instalações e Energias Eletricas\",\n\t\"duracao\":4,\n\t\"departamento\":{\"id\":1}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/interno/curso",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCurso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJUZXN0Iiwic29icmVub21lIjoiRGlyZWN0b3IiLCJmb25lIjoiNTg0NjQwNjQiLCJlbWFpbCI6Im1mbmlyZmZlZmVAZiIsImVuZGVyZWNvIjoiZnJmcnJnc3ZyIiwiZW50aXR5IjoiU2ltaW9uZSBNdWN1bmUiLCJlbnRpdHlMb2dvVXJpIjoiIiwiZXhwIjoxNTc5NjgwMjQ3fQ.xEjskxIOBmUxry8lcEO8qykYyv3ZaK8gOwNrAoln0_tutWNdld0wCK8PVfeddwSQbldpvopDRGut05xIcJPX6g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":4,\n\t\"nome\":\"Instalações e Energias Eletricas\",\n\t\"duracao\":3,\n\t\"totalModified\":0,\n\t\"departamento\":{\n\t\t\"id\":1\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/interno/curso",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"curso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCursoById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/curso/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"curso",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindCursoById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/curso/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"curso",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estudante",
+			"item": [
+				{
+					"name": "EstudanteProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjo4LCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJFc3R1ZGFudGUiLCJ1c2VybmFtZSI6Im1hcmlhbm9qczgiLCJub21lIjoiTWFyaWFubyIsInNvYnJlbm9tZSI6IkphdmFTd2luZyIsImZvbmUiOiI5OTYtNDc2LTAwMCIsImVtYWlsIjoibWFyaWFub2dvbmNhbHZlczhAZ21haWwuY29tIiwiZW5kZXJlY28iOiJMdWFuZGEsIE1vcnJvIGJlbnRvLCBHYW1layIsImVudGl0eSI6IlNpbWlvbmUgTXVjdW5lIiwiZW50aXR5TG9nb1VyaSI6IjIwMDMyZTYwLWRhMTItNDE4OC1iMjZmLWM1MWE0MzJmNzNmYSIsImV4cCI6MTU3OTI2MDU1NH0.JbdzOGHTawnMdzgkBNhIznpE5JtWGKCMWfycM0RmrJalVj05_CzMTcNUX2MaNSzqqect3aG1HDgo27ReJMGPwg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/estudante/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"estudante",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listEstudante",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJKb3PDqSBNdW5kYSIsInNvYnJlbm9tZSI6Ik1hY3VlbGUiLCJmb25lIjoiOTIzLTQ1OC03NDEiLCJlbWFpbCI6Impvc2VtYXF1ZWxlaG9AdG1haWwuY29tIiwiZW5kZXJlY28iOiJMdWFuZGEsIEJlbGFzLCBGdXR1bmdvIiwiZW50aXR5IjoiSW5zdGl0dXRvIE3DqWRpbyBJbmR1c3RyaWFsIFNpbWlvbmUgTXVjdW5lIiwiZW50aXR5TG9nb1VyaSI6ImE5MTYzOWMyLWI3MWQtNDE0YS04YWFmLWQwZTU4YWRmNGE3MyIsImV4cCI6MTU4MTc5NTI2Nn0.7bTw5Ta2bpjNS0iPF1m9QonQ_pjOi5DsgiswVSIRdUFLYt3CcvlcyZGG5MyvNvWUg5kkOtGiD4x_K_MteFKKVQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/estudante/l/g?curso=Técnico de Informática&turma=TI13AT&sexo=&entrada=2016",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"estudante",
+								"l",
+								"g"
+							],
+							"query": [
+								{
+									"key": "curso",
+									"value": "Técnico de Informática"
+								},
+								{
+									"key": "turma",
+									"value": "TI13AT"
+								},
+								{
+									"key": "sexo",
+									"value": ""
+								},
+								{
+									"key": "entrada",
+									"value": "2016"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindEstudanteByd",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJKb3PDqSBNdW5kYSIsInNvYnJlbm9tZSI6Ik1hY3VlbGUiLCJmb25lIjoiOTIzLTQ1OC03NDEiLCJlbWFpbCI6Impvc2VtYXF1ZWxlaG9AdG1haWwuY29tIiwiZW5kZXJlY28iOiJMdWFuZGEsIEJlbGFzLCBGdXR1bmdvIiwiZW50aXR5IjoiSW5zdGl0dXRvIE3DqWRpbyBJbmR1c3RyaWFsIFNpbWlvbmUgTXVjdW5lIiwiZW50aXR5TG9nb1VyaSI6ImE5MTYzOWMyLWI3MWQtNDE0YS04YWFmLWQwZTU4YWRmNGE3MyIsImV4cCI6MTU4MTc5NTI2Nn0.7bTw5Ta2bpjNS0iPF1m9QonQ_pjOi5DsgiswVSIRdUFLYt3CcvlcyZGG5MyvNvWUg5kkOtGiD4x_K_MteFKKVQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/estudante/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"estudante",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orientador",
+			"item": []
+		},
+		{
+			"name": "Departamento",
+			"item": [
+				{
+					"name": "SaveDepartamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIGRvIElJIGNpY2xvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU3NTIxMX0.I9D3RnAU5hdPn6KYo6_joJ2G6cUKtZd2ssEIt3MDUs-s7tYDA-BbvXzGk7DyEbCSl8BAtC0JS4-pXMT-SlmXSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\":\"Tecnologias\",\n\t\"totalCurso\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/interno/departamento",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"departamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateDepartamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIFByaW1hcmlvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyNjcyMX0.kW_TzMKV6vOtuEePseqMbwHz4fCVs7VO5nHGck9KjpP-V6SMdUsaUM7xP4l_FBs0H-6lnBfFbTVQbsRwhwnf-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1,\n\t\"totalModified\":0,\n\t\"nome\":\"Tecnologias\",\n\t\"totalCurso\":0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/interno/departamento",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"departamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAllDepartamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIFByaW1hcmlvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyNjcyMX0.kW_TzMKV6vOtuEePseqMbwHz4fCVs7VO5nHGck9KjpP-V6SMdUsaUM7xP4l_FBs0H-6lnBfFbTVQbsRwhwnf-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/interno/departamento/l",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"departamento",
+								"l"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindDepartamentoById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIFByaW1hcmlvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyNjcyMX0.kW_TzMKV6vOtuEePseqMbwHz4fCVs7VO5nHGck9KjpP-V6SMdUsaUM7xP4l_FBs0H-6lnBfFbTVQbsRwhwnf-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/interno/departamento/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"departamento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteDepartamentoById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIFByaW1hcmlvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyNjcyMX0.kW_TzMKV6vOtuEePseqMbwHz4fCVs7VO5nHGck9KjpP-V6SMdUsaUM7xP4l_FBs0H-6lnBfFbTVQbsRwhwnf-w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/interno/departamento/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"departamento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Turma",
+			"item": [
+				{
+					"name": "findTurmaById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJKb3PDqSBNdW5kYSIsInNvYnJlbm9tZSI6Ik1hY3VlbGUiLCJmb25lIjoiOTIzLTQ1OC03NDEiLCJlbWFpbCI6Impvc2VtYXF1ZWxlaG9AdG1haWwuY29tIiwiZW5kZXJlY28iOiJMdWFuZGEsIEJlbGFzLCBGdXR1bmdvIiwiZW50aXR5IjoiU2ltaW9uZSBNdWN1bmUiLCJlbnRpdHlMb2dvVXJpIjoiYTkxNjM5YzItYjcxZC00MTRhLThhYWYtZDBlNThhZGY0YTczIiwiZXhwIjoxNTgxNDk5MTg0fQ.xiwgj8MIosPOid4H7zqHtMdulWVUxxnB6DuzxwUJs9ZfMqDlsYmPujtFb19SnWOThQYYy2ZWg8X_B0Gdd3ESAQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/turma/l/c?curso=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"turma",
+								"l",
+								"c"
+							],
+							"query": [
+								{
+									"key": "curso",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteTurmaById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJKb3PDqSBNdW5kYSIsInNvYnJlbm9tZSI6Ik1hY3VlbGUiLCJmb25lIjoiOTIzLTQ1OC03NDEiLCJlbWFpbCI6Impvc2VtYXF1ZWxlaG9AdG1haWwuY29tIiwiZW5kZXJlY28iOiJMdWFuZGEsIEJlbGFzLCBGdXR1bmdvIiwiZW50aXR5IjoiU2ltaW9uZSBNdWN1bmUiLCJlbnRpdHlMb2dvVXJpIjoiYTkxNjM5YzItYjcxZC00MTRhLThhYWYtZDBlNThhZGY0YTczIiwiZXhwIjoxNTgxNDk5MTg0fQ.xiwgj8MIosPOid4H7zqHtMdulWVUxxnB6DuzxwUJs9ZfMqDlsYmPujtFb19SnWOThQYYy2ZWg8X_B0Gdd3ESAQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/turma/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"turma",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAllTurma",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJKb3PDqSBNdW5kYSIsInNvYnJlbm9tZSI6Ik1hY3VlbGUiLCJmb25lIjoiOTIzLTQ1OC03NDEiLCJlbWFpbCI6Impvc2VtYXF1ZWxlaG9AdG1haWwuY29tIiwiZW5kZXJlY28iOiJMdWFuZGEsIEJlbGFzLCBGdXR1bmdvIiwiZW50aXR5IjoiU2ltaW9uZSBNdWN1bmUiLCJlbnRpdHlMb2dvVXJpIjoiYTkxNjM5YzItYjcxZC00MTRhLThhYWYtZDBlNThhZGY0YTczIiwiZXhwIjoxNTgxNDk5MTg0fQ.xiwgj8MIosPOid4H7zqHtMdulWVUxxnB6DuzxwUJs9ZfMqDlsYmPujtFb19SnWOThQYYy2ZWg8X_B0Gdd3ESAQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/turma/l/c",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"turma",
+								"l",
+								"c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveTurma",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIGRvIElJIGNpY2xvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU3NTIxMX0.I9D3RnAU5hdPn6KYo6_joJ2G6cUKtZd2ssEIt3MDUs-s7tYDA-BbvXzGk7DyEbCSl8BAtC0JS4-pXMT-SlmXSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sigla\":\"EI10AN\",\n\t\"curso\":{\"id\":1}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/interno/turma",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"turma"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grupo",
+			"item": []
+		},
+		{
+			"name": "Projeto",
+			"item": []
+		},
+		{
+			"name": "Instituto",
+			"item": [
+				{
+					"name": "LIst-Instituto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/instituto?nome",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"instituto"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById-Instituto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/instituto/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"instituto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteInstitutoById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/instituto/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"instituto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save-Instituto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NzU5N30.Dp5y-mBMMSJDyDZmf5O24Qw-DxoDqY0WGeJeZ5AEmN2CG02KNi-fpk8e1j5PRRKA38ZQRgxehvmRe1nGRNmS4w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Instituto Medio Industrial Simione Mucune\",\n    \"numero\": \"1100\",\n    \"sigla\": \"IMISM\",\n    \"laboratorios\": 6,\n    \"oficinas\": 5,\n    \"salas\": 8,\n    \"cursos\": 0,\n    \"areaFormacao\": {\"id\": 1},\n    \"local\": {\"id\": 1},\n    \"periodo\":{\"id\":5},\n    \"nivel\":{\"id\":3},\n    \"statl\":true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/instituto",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"instituto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update-Instituto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU3NDMzNH0.uy3J-yO4gwXwkg-kxgMi4EPHeZMIGWPXIt7rSu4iYmhXZbA_O5OXmDrKWFI418yBin43Bhen5_L0LsPxZVAM5w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1,\n\t\"totalModified\":0,\n    \"nome\": \"Instituto Medio Industrial Simione Mucune\",\n    \"numero\": \"1100\",\n    \"sigla\": \"IMISM\",\n    \"laboratorios\": 6,\n    \"oficinas\": 5,\n    \"salas\": 8,\n    \"cursos\": 0,\n    \"areaFormacao\": {\"id\": 1},\n    \"local\": {\"id\": 1},\n    \"periodo\":{\"id\":5},\n    \"nivel\":{\"id\":3},\n    \"statal\":true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/instituto",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"instituto"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "ListAllLocal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/local",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"local"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindById-Local",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTE3MWU3MDI0Njk5NzFmYjkwMmI4OGEiLCJ1c2VySWQiOiI1ZTE3MWQzNmQ2ZTllYjFlODA2MDA4YTgiLCJpYXQiOjE1Nzg1ODM2NDh9.rrSidIPOZCAP-6VcDzbGC1NP0JbY1lZdgSw3xTdzTRo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/interno/local/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"local",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteLocalById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTE3MWU3MDI0Njk5NzFmYjkwMmI4OGEiLCJ1c2VySWQiOiI1ZTE3MWQzNmQ2ZTllYjFlODA2MDA4YTgiLCJpYXQiOjE1Nzg1ODM2NDh9.rrSidIPOZCAP-6VcDzbGC1NP0JbY1lZdgSw3xTdzTRo"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/local/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"local",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save-Local",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"distrito\":\"Maianga\",\n\t\"municipio\":{\"id\":1},\n\t\"provincia\":{\"id\":1}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/local",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"local"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateLocal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e15d9e56999b12d577e6b23\",\n\t\"distrito\":\"Prenda 2\",\n\t\"totalModified\": 1,\n\t\"municipio\":\"5e15d95db9040c2a07f536f6\",\n\t\"provincia\":\"5e15d41b14e5f525ec8bc8c9\",\n\t\"admin\":\"5e13ba9ef5cf4536e987c955\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/local",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"local"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Especialidade",
+			"item": []
+		},
+		{
+			"name": "Monicipio",
+			"item": [
+				{
+					"name": "Save-Municipio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\":\"Belas\",\n\t\"provincia\":{\"id\":1}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/municipio",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"municipio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMunicipio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e14c097e2d8be4ec4fd0620\",\n\t\"nome\":\"Samba 2\",\n\t\"totalModified\": 4,\n\t\"admin\":\"5e13ba9ef5cf4536e987c955\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/municipio",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"municipio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMunicipioById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/municipio/5e15b951e9683c196fcb1d48",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"municipio",
+								"5e15b951e9683c196fcb1d48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMunicipioEntity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"_id\": \"5e15b9c1e9683c196fcb1d49\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/municipio",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"municipio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findMunicipioById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e14a1015118622761ea334c\",\n\t\"nome\":\"Maianga\",\n\t\"totalModified\":0,\n\t\"admin\":\"5e13ba9ef5cf4536e987c955\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/municipio/5e14bda2eb07374963af2310",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"municipio",
+								"5e14bda2eb07374963af2310"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAllMuncipios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzgxMzU3MTh9.Q7jZsgEztjfgTlsmUGcdEBGZJ7wJ0bo48vyFEnvEOjnTtEnmwe4k91JB7nOfjymK_ttpkWcdnYADnoDfFhIpvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\":\"Maianga\",\n\t\"admin\":\"5e13ba9ef5cf4536e987c955\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/municipio",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"municipio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Provincia",
+			"item": [
+				{
+					"name": "ListProvincia",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzkyNTk2NzB9.Hkny9RlvSfap4uwxZxFHWLI4savUVckOrUtubIVCl2JTOq3KlEFWr7Qno7Er64bsxerswG-Z_0TG2NSFGcVelA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/provincia",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"provincia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveProvincia",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\":\"Luanda\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/provincia",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"provincia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProvinciaById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"_id\":\"5e174f43c9a8f04e0f7000bc\",\n\t\"nome\":\"Central\",\n\t\"totalModified\":0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/provincia",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"provincia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindProvinciaById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJpYW5vanM4IiwiYWNjb3VudElkIjoxLCJ1c2VySWQiOjEsImFjY2Vzc1R5cGUiOiJBZG1pbiIsInVzZXJuYW1lIjoibWFyaWFub2pzOCIsIm5vbWUiOiJNYXJpYW5vIiwic29icmVub21lIjoiSmF2YVN3aW5nIiwiZm9uZSI6Ijk5Ni00NzYtMDAwIiwiZW1haWwiOiJtYXJpYW5vQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBHYW1layIsImV4cCI6MTU3NjQzMDcwMn0.SUsd1YfLZOZUNHGSnhgaix-4yvVDMdkhZ16kl8FZct8Gzqie9TdMgmjl3buJ3UM41UJvW_fakNkSTU_FcdGVPQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/provincia/5e15ccd755b3902112dc58c7",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"provincia",
+								"5e15ccd755b3902112dc58c7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProvinciaById",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTE3NDcwYjYxZWZlZDQ3YWJlYzI4ODYiLCJ1c2VySWQiOiI1ZTE3NDcwMzYxZWZlZDQ3YWJlYzI4ODUiLCJpYXQiOjE1Nzg1ODUwMDR9.5cEASqtNhjyAlD7XbYSG7rV_B_G7Su1wQfUBwLIt4NQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/provincia/5e174f43c9a8f04e0f7000bc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"provincia",
+								"5e174f43c9a8f04e0f7000bc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Save-Admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n\t\"nome\": \"administrator\",\n\t\"sobreNome\": \"superSu\",\n\t\"sexo\": \"M\",\n\t\"dataNascimento\": \"1997-05-12\",\n\t\"bi\": \"00000000001\",\n\t\"fone\": \"000-000-001\",\n\t\"email\": \"supersu2@sumail.com\",\n\t\"endereco\": \"Hidden\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admins",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAdmin",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \n\t\"nome\": \"administrator\",\n\t\"sobreNome\": \"superSu\",\n\t\"sexo\": \"M\",\n\t\"dataNascimento\": \"1997-05-12\",\n\t\"bi\": \"00000000001\",\n\t\"fone\": \"000-000-001\",\n\t\"email\": \"supersu2@sumail.com\",\n\t\"endereco\": \"Hidden\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admins",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admins"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AdminProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1NzkyNjcwNTV9.-ENpJeUm1k9dc-oxGSVtvuVabyHN-mx8Pw_0vwuYOck-ud6BmK4PLfu2PzWLC2GlE_k0zUyHwEKaCP-tLBVhjA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAdminById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1Nzg2MTA5MDN9.o4UCjxjOz16alkuLvVuLKNYHyjosJ5_PAADKVYIjEVThBX0acMOuS-bcmt1rsGwwPftrOyrjhWSVs4D3pXSIvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admins/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admins",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAdminById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDAiLCJlbWFpbCI6InN1cGVyc3VAc3VtYWlsLmNvbSIsImVuZGVyZWNvIjoiSGlkZGVuIiwiZW50aXR5IjoiQWRtaW5pc3RyYWRvciIsImVudGl0eUxvZ29VcmkiOiIiLCJleHAiOjE1Nzg2MTA5MDN9.o4UCjxjOz16alkuLvVuLKNYHyjosJ5_PAADKVYIjEVThBX0acMOuS-bcmt1rsGwwPftrOyrjhWSVs4D3pXSIvw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admins/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admins",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EnsinoNivel",
+			"item": [
+				{
+					"name": "FindNivelEnsinoById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUxNTU5M30.Woml2lgnaNGZKooIoR5TB-pGKpOMwUdBwOOEklKPBlGGRK0nXZCdbASXIya_f_fn4ttbG5duwjjEZ6JhcJtNGQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ensinonivel/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ensinonivel",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAllNivelEnsino Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUxNTU5M30.Woml2lgnaNGZKooIoR5TB-pGKpOMwUdBwOOEklKPBlGGRK0nXZCdbASXIya_f_fn4ttbG5duwjjEZ6JhcJtNGQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/ensinonivel",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"ensinonivel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveNivelEnsino",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"descricao\": \"Ensino do II ciclo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/ensinonivel",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"ensinonivel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EditNivelEnsino",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \t\"id\":4,\n    \"totalModified\": 0,\n    \"descricao\": \"Ensino Tester\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/ensinonivel",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"ensinonivel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteNivelEnsino",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/ensinonivel/4",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"ensinonivel",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matricula",
+			"item": [
+				{
+					"name": "Matricula",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"numeroProcesso\":\"000000000000\",\n\t\"nome\":\"Mariano\",\n\t\"sobreNome\":\"JavaSwing\",\n\t\"sexo\":\"M\",\n\t\"dataNascimento\":\"1997-05-12\",\n\t\"bi\":\"00154846446LA054\",\n\t\"fone\":\"996-746-000\",\n\t\"email\":\"marianogoncalves8@gmail.com\",\n\t\"endereco\":\"Mainga, Gamek, Morro bento\",\n\t\"curso\":{\"id\":1},\n\t\"classe\":{\"id\":13},\n\t\"nivel\":\"\",\n\t\"ensinoNivel\":{\"id\":1},\n\t\"municipio\":{\"id\":1},\n\t\"provincia\":{\"id\":1},\n\t\"periodo\":{\"id\":1},\n\t\"anoLetivo\":2020,\n\t\"anoDescricao\":\"2020\",\n\t\"entrada\":2020,\n\t\"totalModified\":0,\n\t\"adminInterno\":{\"id\":1},\n\t\"instituto\":{\"id\":1}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/matriculas",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"matriculas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Matricula/Confirmacao",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":1,\n\t\"numeroProcesso\":\"000000000000\",\n\t\"numeroSerie\":\"012145787451012\",\n\t\"nome\":\"Mariano\",\n\t\"sobreNome\":\"JavaSwing\",\n\t\"sexo\":\"M\",\n\t\"dataNascimento\":\"1997-05-12\",\n\t\"bi\":\"00154846446LA054\",\n\t\"fone\":\"996-746-000\",\n\t\"email\":\"marianogoncalves8@gmail.com\",\n\t\"endereco\":\"Mainga, Gamek, Morro bento\",\n\t\"curso\":{\"id\":1},\n\t\"classe\":{\"id\":11},\n\t\"turma\":{\"id\":1},\n\t\"nivel\":\"\",\n\t\"ensinoNivel\":{\"id\":1},\n\t\"municipio\":{\"id\":1},\n\t\"provincia\":{\"id\":1},\n\t\"periodo\":{\"id\":1},\n\t\"anoLetivo\":2020,\n\t\"anoDescricao\":\"2020\",\n\t\"entrada\":2020,\n\t\"totalModified\":0,\n\t\"adminInterno\":{\"id\":1},\n\t\"instituto\":{\"id\":1}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/matriculas/comfirm",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"matriculas",
+								"comfirm"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Periodo",
+			"item": [
+				{
+					"name": "ListAllPeriodo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/periodo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"periodo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindPeriodoById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/periodo/6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"periodo",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePeriodoById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUxNjE2Nn0.eiozQFd9hYvX-Tzm-HrzTx99sj6odwo5AVAeg7K4KE4UOK6ieYVWIGBqCaDgSs8dWSA4DmKptmNH7gphJ9udBA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/admin/periodo/6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"periodo",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SavePeriodo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"createdAt\": \"2020-02-28 17:23:23\",\n\t\"totalModified\": 0,\n\t\"descricao\": \"Manhã, Tarde e Noite\",\n\t\"tipo\": \"Escola\",\n\t\"adulto\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/periodo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"periodo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePeriodo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1,\n\t\"createdAt\": \"2020-02-28 17:23:23\",\n\t\"totalModified\": 0,\n\t\"descricao\": \"Manhã\",\n\t\"tipo\": \"Estudante\",\n\t\"adminEntity\":{\"id\":1},\n\t\"adulto\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/periodo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"periodo"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Classe",
+			"item": [
+				{
+					"name": "SaveClasse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"descricao\":\"13 Classe\",\n\t\"ensinoNivel\":{\"id\":3}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/classe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"classe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateClasse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU2NTM2OH0.9sqcz6cNMy6jmP2qk7bU31JavtCGXsHd4Q_cHKBzmj4t_CyWoQVQi1elhmmeM2Eqw3vSdNcKRHHGnw0MrnOHGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\":7,\n\t\"totalModified\":0,\n\t\"descricao\":\"6 Classe\",\n\t\"ensinoNivel\":{\"id\":1}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/admin/classe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"classe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindClasseById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyMzgwOH0.K36SgsQoI1ooy0mpwXbxv3wEoX9gWyte-QWVPTFyRkHTD8I8EYkYHPWo67l-aNHDqCdWSiZmFzNkWu1UfuroxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"descricao\":\"Iniciaçao\",\n\t\"nivel\":\"Ensino Primario\",\n\t\"ensinoNivel\":{\"id\":1}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/classe/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"classe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteClasseById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyMzgwOH0.K36SgsQoI1ooy0mpwXbxv3wEoX9gWyte-QWVPTFyRkHTD8I8EYkYHPWo67l-aNHDqCdWSiZmFzNkWu1UfuroxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/admin/classe/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"admin",
+								"classe",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListAllClasse",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkVkdWMiLCJhY2NvdW50SWQiOjEsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkFkbWluIiwidXNlcm5hbWUiOiJhZG1pbkVkdWMiLCJub21lIjoiYWRtaW5pc3RyYXRvciIsInNvYnJlbm9tZSI6InN1cGVyU3UiLCJmb25lIjoiMDAwLTAwMC0wMDEiLCJlbWFpbCI6InN1cGVyc3UyQHN1bWFpbC5jb20iLCJlbmRlcmVjbyI6IkhpZGRlbiIsImVudGl0eSI6IkFkbWluaXN0cmFkb3IiLCJuaXZlbCI6Ik5vIE5pdmVsIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzUyMzgwOH0.K36SgsQoI1ooy0mpwXbxv3wEoX9gWyte-QWVPTFyRkHTD8I8EYkYHPWo67l-aNHDqCdWSiZmFzNkWu1UfuroxA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/classe",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"classe"
+							],
+							"query": [
+								{
+									"key": "descricao",
+									"value": "7",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Historico",
+			"item": [
+				{
+					"name": "ListAllEstudanteByFiltering",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbWlzbTIwMTkiLCJhY2NvdW50SWQiOjIsInVzZXJJZCI6MSwiYWNjZXNzVHlwZSI6IkludGVybm8iLCJ1c2VybmFtZSI6ImltaXNtMjAxOSIsIm5vbWUiOiJNYW51ZWwgTWFyaWEiLCJzb2JyZW5vbWUiOiJNYWN1ZWxlIiwiZm9uZSI6IjkzNS05NDgtODQ1IiwiZW1haWwiOiJiYXJib3NhQGdtYWlsLmNvbSIsImVuZGVyZWNvIjoiTHVhbmRhLCBQcmVuZGEiLCJlbnRpdHkiOiJJbnN0aXR1dG8gTWVkaW8gSW5kdXN0cmlhbCBTaW1pb25lIE11Y3VuZSIsIm5pdmVsIjoiRW5zaW5vIGRvIElJIGNpY2xvIiwiZW50aXR5TG9nb1VyaSI6IiIsImV4cCI6MTU4MzU3NTIxMX0.I9D3RnAU5hdPn6KYo6_joJ2G6cUKtZd2ssEIt3MDUs-s7tYDA-BbvXzGk7DyEbCSl8BAtC0JS4-pXMT-SlmXSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/interno/historico?nome&sexo&cursoNome&turma",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"interno",
+								"historico"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": null
+								},
+								{
+									"key": "sexo",
+									"value": null
+								},
+								{
+									"key": "cursoNome",
+									"value": null
+								},
+								{
+									"key": "turma",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login-api",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"litroftUser\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login-rest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"imism2019\",\n\t\"password\":\"password\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"imism2019\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/signup?serial=200229105350",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"signup"
+					],
+					"query": [
+						{
+							"key": "serial",
+							"value": "200229105350"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTE3NDcwYjYxZWZlZDQ3YWJlYzI4ODYiLCJ1c2VySWQiOiI1ZTE3NDcwMzYxZWZlZDQ3YWJlYzI4ODUiLCJpYXQiOjE1Nzg2NTQ3NDR9.7AmdKjGWK6nKXkxJjaZ26rWxNJ4HGTLcd0X6oNPF3iI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"imism2019\",\n\t\"password\":\"password\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/profile",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
